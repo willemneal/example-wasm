@@ -1,0 +1,13 @@
+[package]
+name = "example-wasm"
+version = "0.0.0"
+edition = "2018"
+
+[workspace]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+
+
