@@ -1,11 +1,16 @@
-# Hello World
+# Example of lack of symbols in generated debug Wasm binary
 
-## Requirements
-- Rust target `wasm32-unknown-unknown` - install using `rustup target add wasm32-unknown-unknown`
+If wasm target not installed
+```
+rustup target add wasm32-unknown-unknown
+```
 
-## Building
-`cargo build --release`
+Install wasm name binary to read name section
+```
+cargo install wasm-nm
+```
 
-
-## Pass String from Host to Wasm Example
-To see an example of passing a string to web assembly from rust see the `examples/string.rs` file.  This can be run using `cargo run --example string`.
+build and see names
+```
+./build.sh
+```
